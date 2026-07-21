@@ -1,0 +1,42 @@
+/* katas.css — shared by all three kata files.
+   Each kata has its own section below. Write your flexbox here.
+   Everything starts empty on purpose. */
+
+/* ---- Kata 1: The Navbar ------------------------------------------
+   Goal: name on the left, three links pushed to the right, on one row.
+   The .navbar has two children: the brand, and a .links group. Push
+   them to opposite ends. Then make .links a little row of its own so
+   the three links sit side by side with a gap. */
+.navbar {
+  /* your flexbox here — push brand and links apart */
+  padding: 1rem;
+  background: #171726;
+}
+
+.links {
+  /* your flexbox here — a small row of three links with a gap */
+}
+
+
+/* ---- Kata 2: The Centered Card -----------------------------------
+   Goal: the .card sits perfectly centered — horizontally AND
+   vertically — inside .hero, which fills the whole window height. */
+.hero {
+  /* your flexbox here */
+  min-height: 100vh;   /* the section is already full-height for you */
+  background: #22223a;
+}
+
+
+/* ---- Kata 3: The Photo Row ---------------------------------------
+   Goal: three images share the row evenly, with consistent gaps,
+   and don't overflow on a narrow window. Target .photo-row, and
+   don't forget the images themselves need to behave. */
+.photo-row {
+  /* your flexbox here */
+  padding: 1rem;
+}
+
+.photo-row img {
+  /* keep images from overflowing */
+}

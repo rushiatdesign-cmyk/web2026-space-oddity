@@ -1,0 +1,67 @@
+/* Mixtape Shelf — THIS FILE IS DONE. Do not change it.
+   Read it like a blueprint: it tells you exactly which elements
+   and classes to create in index.html. Your job is to write that
+   HTML so this styling has something to grab onto.
+
+   What this CSS expects:
+   - a container with class "shelf" (make TWO of them)
+   - inside each shelf, several boxes with class "cassette"
+   - inside each cassette: an element with class "label" (the album
+     name) and an element with class "year"
+*/
+
+body {
+  padding: 2rem;
+  background: #17131f;
+}
+
+h1.mixtape-title {
+  color: #ffd166;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.1em;
+}
+
+/* A shelf is a row of cassettes, standing on the shelf, so they
+   line up along their BOTTOM edge even if they're different heights. */
+.shelf {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;   /* stand them on the shelf */
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #0e0b14;
+  border-bottom: 6px solid #3a2e1e;
+  border-radius: 4px;
+}
+
+/* A cassette is a tall box. Its label sits at the top and its year
+   sits at the bottom, pushed apart by space-between. */
+.cassette {
+  flex: 0 0 130px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background: linear-gradient(160deg, #ef476f, #b5179e);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.cassette:nth-child(2n)   { background: linear-gradient(160deg, #06d6a0, #118ab2); }
+.cassette:nth-child(3n)   { background: linear-gradient(160deg, #ffd166, #f77f00); color: #1a1a2b; }
+
+.label {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.year {
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}

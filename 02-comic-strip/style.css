@@ -1,0 +1,45 @@
+/* Comic Strip — the panels are correct in the HTML, but this CSS
+   is shuffling them with the `order` property and squishing them
+   on narrow screens. Fix both problems. */
+
+.strip {
+  display: flex;
+
+  /* BUG A: on a narrow window the panels squish into slivers instead
+     of wrapping onto a new line. Which value lets them wrap? */
+  flex-wrap: nowrap;
+
+  gap: 1rem;
+}
+
+/* BUG B: `order` decides the visual position of each panel, lowest
+   first. Right now they're scrambled, so the joke reads out of
+   sequence. Set each panel's order so the strip reads 1, 2, 3, 4.
+   (Tip: the simplest correct answer is very tidy. You could also
+   just delete these four lines — why does that work?) */
+.p1 { order: 3; }
+.p2 { order: 1; }
+.p3 { order: 4; }
+.p4 { order: 2; }
+
+/* Paint below. Leave it be. */
+.panel {
+  flex: 1 1 160px;
+  min-height: 160px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+  background: #12121c;
+  color: #f4f4f8;
+}
+
+.p1 { background: #2b2140; }
+.p2 { background: #1e3350; }
+.p3 { background: #4a2140; }
+.p4 { background: #143a34; }
+
+.cap {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

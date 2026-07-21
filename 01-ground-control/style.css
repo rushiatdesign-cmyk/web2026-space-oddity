@@ -1,0 +1,43 @@
+/* Ground Control — four bugs, marked BUG 1 through BUG 4.
+   Fix them one at a time and refresh after each so you can see
+   what each line actually does. */
+
+.console {
+  /* BUG 1: a row of boxes needs flexbox turned ON.
+     Right now this is "block", so the dials stack like paragraphs. */
+  display: block;
+
+  /* BUG 2: which direction should the dials line up?
+     "column" is stacking them top-to-bottom. We want a row. */
+  flex-direction: column;
+
+  /* BUG 3: this should center the dials along the row.
+     "left" is not a real value for this property — check the docs
+     for what centers things along the main axis. */
+  justify-content: left;
+
+  /* BUG 4: the dials are touching. Give them breathing room.
+     (Hint: one property, one value, no margins needed.) */
+  /* ...something is missing here... */
+}
+
+/* Below here is just paint. You don't need to change it. */
+.dial {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 12px;
+  background: #12121c;
+  color: #8ecbff;
+  font-size: 1.8rem;
+}
+
+.dial span {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: #8a8ab0;
+}

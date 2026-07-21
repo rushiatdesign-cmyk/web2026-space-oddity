@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 — Boarding Pass</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="kicker">Exercise 06 · Build both</p>
+    <h1>Boarding Pass 🎫</h1>
+    <p>No starter markup this time, and no TODOs. Just a picture: open <code>goal.png</code>. Build a boarding pass that matches its <em>vibe</em> (not its pixels) using everything from 01–05. Start by boxing the picture in pen — where are the rows, where are the columns, which row holds columns inside it?</p>
+  </header>
+
+  <div class="goal">
+    <p>The goal</p>
+    <img src="goal.png" alt="A boarding pass: a header row with airline name on the left and logo on the right, a middle row of three info columns (passenger, gate, seat), and a footer strip">
+  </div>
+
+  <div class="stage">
+    <!--
+      YOUR CANVAS. Build the boarding pass here.
+
+      Look at goal.png and find the boxes:
+        - a HEADER row: airline name on the left, a little logo on the right
+          (that's a flex row with space-between)
+        - a MIDDLE row: three columns — passenger / gate / seat
+          (a flex row; each column is a small stack of label + value)
+        - a FOOTER strip along the bottom (a barcode-ish band)
+
+      A "row that contains columns" means a flex container whose children
+      are themselves flex containers with flex-direction: column. That
+      nesting is the whole game. Make it your ticket — your airline, your
+      destination, your name.
+    -->
+  </div>
+</body>
+</html>

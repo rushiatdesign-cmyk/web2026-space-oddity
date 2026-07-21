@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kata 2 — The Centered Card</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="katas.css">
+  <style>
+    .card {
+      max-width: 320px;
+      padding: 2rem;
+      border-radius: 12px;
+      background: #fff;
+      color: #1a1a2b;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .card h2 { margin: 0 0 0.5rem; }
+    .card p { margin: 0; color: #555; }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <p class="kicker">Kata 2</p>
+    <h1>The Centered Card</h1>
+    <p>The legendary "center a div." Put <code>.card</code> dead center of <code>.hero</code> — horizontally and vertically. The section is already full window height. Edit <code>.hero</code> in <code>katas.css</code>: a flex container plus <code>justify-content</code> and <code>align-items</code>.</p>
+  </header>
+
+  <section class="hero">
+    <div class="card">
+      <h2>Centered at last</h2>
+      <p>Millions have googled this. Now you know it forever.</p>
+    </div>
+  </section>
+</body>
+</html>

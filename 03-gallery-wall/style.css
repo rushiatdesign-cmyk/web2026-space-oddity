@@ -1,0 +1,72 @@
+/* Gallery Wall — you write this file. Follow the TODOs.
+   Refresh after each one and compare with goal.png. */
+
+.wall {
+  /* TODO 1: make this a flex container. */
+  /* TODO 2: the wall should be as tall as the browser window.
+     (Hint: min-height and a unit that means "the viewport height".) */
+  /* TODO 3: center the painting along the row — left/right. */
+  /* TODO 4: center the painting across the row — top/bottom.
+     TODOs 3 and 4 together are the legendary "center a div". */
+
+  background: #ece7dd;
+  padding: 2rem;
+}
+
+.hero {
+  /* This is the painting + its plaque. It's already styled below —
+     your job in .wall is to position it, not to restyle it. */
+  margin: 0;
+  max-width: 420px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* The lower shelf of three small frames. */
+.frames {
+  /* TODO 5: make this a flex row. */
+  /* TODO 6: give the frames a consistent gap between them. */
+  /* TODO 7: make the three frames share the row evenly. Try
+     justify-content: space-between first. Then try giving each
+     .frame `flex: 1` instead — notice the difference. */
+
+  background: #ded7c9;
+  padding: 1.5rem 2rem;
+}
+
+.frame {
+  margin: 0;
+  max-width: 220px;
+  background: #fff;
+  padding: 0.6rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.frame img {
+  /* TODO 8: images have a habit of blowing out of their frames.
+     One rule keeps them polite. (You'll see this again tomorrow.) */
+
+  height: auto;
+  display: block;
+}
+
+.frame figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.8rem;
+}

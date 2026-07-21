@@ -1,0 +1,40 @@
+/* Sticker Sheet — you write this file. Follow the TODOs, refresh,
+   and resize the window to test the wrapping. */
+
+.sheet {
+  /* TODO 1: turn on flexbox. */
+  /* TODO 2: let the stickers wrap onto new lines instead of
+     squishing into one row. */
+  /* TODO 3: give them a comfortable gap (rows AND columns —
+     `gap` handles both). */
+  /* TODO 4: center each row of stickers. */
+  /* TODO 5 (bonus): the stickers are different heights. Line them
+     up along a shared baseline or center them across the row with
+     align-items. Try a couple of values and keep the one you like. */
+}
+
+.banner {
+  /* TODO 6: make the banner sticker greedy so it grows to eat all
+     the leftover space on its row. (Hint: flex-grow.) */
+}
+
+/* Paint below — the sticker look. Leave it alone. */
+.sticker {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: #ffd166;
+  color: #1a1a2b;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sticker:nth-child(3n)   { background: #ef476f; color: #fff; }
+.sticker:nth-child(3n+1) { background: #06d6a0; }
+.sticker:nth-child(4n)   { background: #118ab2; color: #fff; }
+
+.banner {
+  background: #12121c;
+  color: #ffd166;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
