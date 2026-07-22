@@ -1,79 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Oddity: flexbox exercises</title>
-  <link rel="stylesheet" href="shared.css">
-  <style>
-    main {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    h1 { margin: 0 0 0.5rem; }
-    .lead { color: #444; margin: 0 0 2rem; }
-    .list { display: flex; flex-direction: column; gap: 0.75rem; }
-    .row {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem;
-      border: 1px solid #e0e0e2;
-      border-radius: 6px;
-      background: #fff;
-      color: inherit;
-      text-decoration: none;
-    }
-    .row:hover { border-color: #2563eb; }
-    .num { color: #888; font-variant-numeric: tabular-nums; }
-    .row .body { flex: 1; }
-    .row .body strong { display: block; }
-    .row .body span { color: #666; font-size: 0.9rem; }
-    .tag { font-size: 0.8rem; color: #666; }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>Space Oddity</h1>
-    <div class="list">
-      <a class="row" href="01-navbar/index.html">
-        <span class="num">01</span>
-        <span class="body"><strong>Navbar</strong><span>Fix the CSS</span></span>
-      </a>
-      <a class="row" href="02-filter-bar/index.html">
-        <span class="num">02</span>
-        <span class="body"><strong>Filter bar</strong><span>Fix the CSS</span></span>
-      </a>
-      <a class="row" href="03-gallery/index.html">
-        <span class="num">03</span>
-        <span class="body"><strong>Gallery</strong><span>Write the CSS</span></span>
-      </a>
-      <a class="row" href="04-columns/index.html">
-        <span class="num">04</span>
-        <span class="body"><strong>Columns</strong><span>Write the CSS</span></span>
-      </a>
-      <a class="row" href="05-profile-list/index.html">
-        <span class="num">05</span>
-        <span class="body"><strong>Profile list</strong><span>Write the HTML</span></span>
-      </a>
-      <a class="row" href="06-card/index.html">
-        <span class="num">06</span>
-        <span class="body"><strong>Card</strong><span>Build both from a screenshot</span></span>
-      </a>
-      <a class="row" href="07-drills/index.html">
-        <span class="num">07</span>
-        <span class="body"><strong>Drills</strong><span>Three small ones</span></span>
-      </a>
-      <a class="row" href="08-article/index.html">
-        <span class="num">08</span>
-        <span class="body"><strong>Article</strong><span>Lay out an editorial page</span></span>
-      </a>
-      <a class="row" href="09-front-page/index.html">
-        <span class="num">09</span>
-        <span class="body"><strong>Front page</strong><span>A whole page in flexbox</span></span>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Oddity: flexbox exercises</title>
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+      }
+      .lead {
+        color: #444;
+        margin: 0 0 2rem;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid #e0e0e2;
+        border-radius: 6px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+      }
+      .row:hover {
+        border-color: #2563eb;
+      }
+      .num {
+        color: #888;
+        font-variant-numeric: tabular-nums;
+      }
+      .row .body {
+        flex: 1;
+      }
+      .row .body strong {
+        display: block;
+      }
+      .row .body span {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      .tag {
+        font-size: 0.8rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="universal menu">
+      <div class="menuitem"><a href="../01-navbar/index.html" class="menulinks">1</a></div>
+      <div class="menuitem"><a href="../02-filter-bar/index.html" class="menulinks">2</a></div>
+      <div class="menuitem"><a href="../03-gallery/index.html" class="menulinks">3</a></div>
+      <div class="menuitem"><a href="../04-columns/index.html" class="menulinks">4</a></div>
+      <div class="menuitem"><a href="../05-profile-list/index.html" class="menulinks">5</a></div>
+      <div class="menuitem"><a href="../06-card/index.html" class="menulinks">6</a></div>
+      <div class="menuitem"><a href="../07-drills/index.html" class="menulinks">7</a></div>
+      <div class="menuitem"><a href="../08-article/index.html" class="menulinks">8</a></div>
+      <div class="menuitem"><a href="../09-front-page/index.html" class="menulinks">9</a></div>
     </div>
-  </main>
-</body>
+
+    <main>
+      <h1>Space Oddity</h1>
+      <div class="list">
+        <a class="row" href="01-navbar/index.html">
+          <span class="num">01</span>
+          <span class="body"><strong>Navbar</strong><span>Fix the CSS</span></span>
+        </a>
+        <a class="row" href="02-filter-bar/index.html">
+          <span class="num">02</span>
+          <span class="body"><strong>Filter bar</strong><span>Fix the CSS</span></span>
+        </a>
+        <a class="row" href="03-gallery/index.html">
+          <span class="num">03</span>
+          <span class="body"><strong>Gallery</strong><span>Write the CSS</span></span>
+        </a>
+        <a class="row" href="04-columns/index.html">
+          <span class="num">04</span>
+          <span class="body"><strong>Columns</strong><span>Write the CSS</span></span>
+        </a>
+        <a class="row" href="05-profile-list/index.html">
+          <span class="num">05</span>
+          <span class="body"><strong>Profile list</strong><span>Write the HTML</span></span>
+        </a>
+        <a class="row" href="06-card/index.html">
+          <span class="num">06</span>
+          <span class="body"><strong>Card</strong><span>Build both from a screenshot</span></span>
+        </a>
+        <a class="row" href="07-drills/index.html">
+          <span class="num">07</span>
+          <span class="body"><strong>Drills</strong><span>Three small ones</span></span>
+        </a>
+        <a class="row" href="08-article/index.html">
+          <span class="num">08</span>
+          <span class="body"><strong>Article</strong><span>Lay out an editorial page</span></span>
+        </a>
+        <a class="row" href="09-front-page/index.html">
+          <span class="num">09</span>
+          <span class="body"><strong>Front page</strong><span>A whole page in flexbox</span></span>
+        </a>
+      </div>
+    </main>
+  </body>
 </html>
