@@ -20,9 +20,11 @@
 .thumbs {
   /* TODO: flex row, even gap, thumbnails share the width */
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   background: #ded7c9;
   padding: 1.5rem 2rem;
+  flex-wrap: wrap;
 }
 
 .thumbs figure {

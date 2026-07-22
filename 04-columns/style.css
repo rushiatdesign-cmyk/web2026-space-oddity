@@ -1,9 +1,16 @@
 .features {
   /* TODO: flex row with a gap */
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .feature {
   /* TODO: each column takes an equal share of the width */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 1.5rem;
   border: 1px solid #e0e0e2;
   border-radius: 8px;
