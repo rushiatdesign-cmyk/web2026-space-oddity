@@ -1,34 +1,46 @@
 /* a. Toolbar: title left, button far right, one row, centered. */
 .toolbar {
   /* TODO */
+  display: flex;
   padding: 0.75rem 1rem;
   border: 1px solid #e0e0e2;
   border-radius: 8px;
   background: #fff;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* b. Search row: input grows, button keeps its size. */
 .search {
   /* TODO */
+  display: flex;
   margin-top: 1.5rem;
 }
 .search input {
   /* TODO: grow to fill */
+  display: flex;
   padding: 0.5rem 0.75rem;
+  flex-grow: 1;
 }
 
 /* c. Centered box: center it across and down the band. */
 .hero {
   /* TODO */
+  display: flex;
   min-height: 300px;
   margin-top: 1.5rem;
   border: 1px solid #e0e0e2;
   border-radius: 8px;
   background: #fff;
+  justify-content: center;
 }
 .box {
   padding: 1.5rem 2rem;
   background: #1b1b2b;
   color: #fff;
   border-radius: 8px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
