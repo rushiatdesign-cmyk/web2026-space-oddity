@@ -9,18 +9,29 @@
   /* TODO: title on the left, issue on the right, on one row, centered */
   padding-bottom: 1rem;
   border-bottom: 3px solid #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .stories {
   /* TODO: lead and rail side by side, with a gap */
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 1rem;
 }
 
 .lead {
   /* TODO: the lead takes about twice the width of the rail */
+  flex: 2;
 }
 
 .rail {
   /* TODO: stack the two small stories with a gap */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
 
 /* Styling below is done. Leave it. */
@@ -49,7 +60,7 @@
 
 .brief-story {
   padding: 1rem;
-  background: #f4f4f5;
+  background: #e1e1e1;
   border-radius: 8px;
 }
 
@@ -59,8 +70,13 @@
 
 .colophon {
   /* TODO: same left/right split as the masthead */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e2;
   color: #666;
   font-size: 0.85rem;
+  margin-top: 1rem;
 }
+
