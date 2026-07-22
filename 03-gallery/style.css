@@ -1,9 +1,12 @@
 .featured {
   /* TODO: flex container, full viewport height, center the figure
      across and down */
+  display: flex;
   min-height: 100vh;
   background: #ece7dd;
   padding: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .featured figure {
@@ -16,6 +19,8 @@
 
 .thumbs {
   /* TODO: flex row, even gap, thumbnails share the width */
+  display: flex;
+  justify-content: space-evenly;
   background: #ded7c9;
   padding: 1.5rem 2rem;
 }
@@ -31,7 +36,8 @@
 figure img {
   /* TODO: keep images inside their frames */
   height: auto;
-  display: block;
+  display: flex;
+  max-width: 100%;
 }
 
 figcaption {
