@@ -1,22 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>06: Card</title>
-  <link rel="stylesheet" href="../shared.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="brief">
-    <h1>06: Card</h1>
-    <p>Build both the HTML and the CSS from scratch to match <code>goal.png</code>. It is a profile card with a header row, an avatar and name on the left and a button on the right, and a row of three stats underneath. Use your own name and numbers, and aim to match the layout rather than the exact pixels.</p>
-    <img class="goal" src="goal.png" alt="A profile card: avatar and name on the left, a follow button on the right, and a row of three stats below">
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06: Card</title>
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="brief">
+      <h1>06: Card</h1>
+      <p>
+        Build both the HTML and the CSS from scratch to match <code>goal.png</code>. It is a profile
+        card with a header row, an avatar and name on the left and a button on the right, and a row
+        of three stats underneath. Use your own name and numbers, and aim to match the layout rather
+        than the exact pixels.
+      </p>
+      <img
+        class="goal"
+        src="goal.png"
+        alt="A profile card: avatar and name on the left, a follow button on the right, and a row of three stats below"
+      />
+    </div>
 
-  <div class="stage">
-    <!-- Build the card here. Find the rows and columns in goal.png
+    <div class="stage">
+      <!-- Build the card here. Find the rows and columns in goal.png
          before you write any tags. The README lists the structure. -->
-  </div>
-</body>
+
+      <div class="wholesection">
+        <div class="toprow">
+          <div class="avatarusername">
+            <div class="avatar"></div>
+            <div class="name">
+              <h2>John Doe</h2>
+              <div class="username">@johndoe</div>
+            </div>
+          </div>
+          <div>
+            <div class="follow-button">
+              <button class="follow">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="posts">
+            <div class="number">100</div>
+            <div class="label">Posts</div>
+          </div>
+          <div class="followers">
+            <div class="number">4.2k</div>
+            <div class="label">Followers</div>
+          </div>
+          <div class="following">
+            <div class="number">301</div>
+            <div class="label">Following</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

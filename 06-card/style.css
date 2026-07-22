@@ -1,2 +1,73 @@
 /* Your CSS. Start from nothing.
    Build the HTML first, then style it to match goal.png. */
+   .toprow {
+      display: flex;
+      flex-direction: row;
+      background-color: #fffdfd;
+
+      align-items: center;
+      max-width: 600px;
+      justify-content: space-between;
+   }
+
+   .follow {
+      padding: 0.5rem 1rem;
+      background-color: #000;
+      color: #fff;
+      border-radius: 1.5rem;
+      font-size: 1rem;
+   }
+
+   .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      margin-top: -1.2rem;
+   }
+
+   .username {
+      font-size: 1rem;
+      color: #838383;
+      margin-left: 0.5rem;
+      margin-top: -1.8rem;
+      
+   }  
+
+   .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ccc;
+   }
+
+   .avatarusername {
+      display: flex;
+      flex-direction: row;
+      margin-left: 1rem;
+      align-items: center;
+   }
+
+   .stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1rem;
+      max-width: 600px;
+      padding: 0 2.5rem;
+   }
+
+   .number {
+      font-weight: bold;
+      font-size: 1.2rem;
+   }
+
+   .wholesection {
+      display: flex;
+      flex-direction: column;
+      background-color: #fffdfd;
+      max-width: 600px;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin: 0 auto;
+      border: 1px solid #e0e0e0;
+   }
